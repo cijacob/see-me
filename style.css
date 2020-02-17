@@ -1,0 +1,312 @@
+body{
+  margin: 0; 
+  padding: 0;
+}
+a, p, h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', sans-serif;
+}
+a{
+  text-decoration: none;
+}
+header{
+  height: 90vh;
+  width: 100vw;
+}
+.menu{
+  width: 100%; 
+  height: 6em; 
+  display: flex; 
+  justify-content: end;
+  align-items: center;
+}
+.menu ul{
+  display: flex; 
+  flex-direction: row;
+  margin:0 100px 0 0; 
+}
+.menu li{
+  list-style: none;
+  padding: 0 1rem;
+  margin: 0 1.5rem;
+}
+.menu a{
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none; 
+  color: #333333;
+}
+.menu a:active, 
+.menu a:focus, 
+.menu a:hover{
+  color: #93abad; 
+}
+
+section#seeme,
+section#contact{
+  background-color: #67b4bb;
+}
+.img_presentation{
+  min-height: 50vh;
+  width: 100vw;
+  background-image: url('./images/LOGOSEEME_OK.png');
+  background-size: 40%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+@media screen and (min-width: 1500px){
+  .img_presentation{
+    margin-top: 140px;
+  }
+}
+section:not(#contact){
+  min-height: 80vh;
+}
+.strong_word{
+  -webkit-text-stroke: 1px black;
+  color: black;
+  font-weight: bolder;
+}
+p .strong_word{
+  text-transform: uppercase;
+}
+.section_title{
+  text-transform: uppercase;
+  font-weight: bolder;
+}
+
+/* seeme */
+.seeme_table{
+  margin: 10px 50px;
+}
+.seeme_title{
+  padding: 30px 25%;
+}
+@media screen and (min-width: 750px){
+  .seeme_table{
+    margin: 10px 300px;
+  }
+  .seeme_title{
+    padding: 60px 30% 0;
+    font-size: 20px;
+  }
+}
+.seeme_title h2{
+  text-align: center;
+}
+.seeme_container{
+  display:flex;
+  justify-content: space-around;
+}
+.block{
+  display:flex;
+  padding: 4em 5em 5em;
+  flex-direction: column;
+}
+.seeme_header{
+  width: 120px;
+  min-height: 120px; 
+  margin:30px auto;
+}
+.seeme_header{
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.seeme_header.obj_icon_one{
+  background-image: url('./images/icone_objectif.png');
+}
+.seeme_header.obj_icon_two{
+  background-image: url('./images/icon_team.png');
+}
+.seeme_header.obj_icon_three{
+  background-image: url('./images/icon_teach.png');
+}
+.seeme_content{
+  min-height: 200px;
+}
+.seeme_content p{
+  color: white;
+  line-height: 2em;
+}
+.seeme_plus{
+  display: flex;
+  justify-content: center;
+  margin-top: 100px; 
+}
+.seeme_plus .inner__seeme_plus{
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: rgba(255,255,255,0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.seeme_plus .inner__seeme_plus .fa{
+  color:#67b4bb;
+  font-size: 35px; 
+}
+
+/* OBJECTIF */
+
+section#objectif{
+  min-height: 80vh;
+}
+.objectif{
+  width: 70%;
+  display: flex;
+  margin:auto;
+  flex-direction: column;
+}
+.objectif h2{
+  color: #67b4bb; 
+  -webkit-text-stroke: 1px #67b4bb;
+}
+.inner__objectif_text{
+  display: flex;
+}
+.inner__objectif h3{
+  font-weight: bolder;
+}
+.column_one, 
+.column_two{
+  flex-grow: 1;
+  flex-basis: 50%;
+  padding-right: 30px;
+}
+
+/* SOLUTIONS */
+section#soution{
+  min-height: 50vh;
+  display: flex;
+  background: #ba8ca6 url('images/boss_opacity30.png') no-repeat 85%;
+  background-size: 15%;
+}
+.solution,
+.resultat, 
+.contact,
+.activite{
+  width: 70%;
+  display: flex;
+  margin: auto;
+  flex-direction: column;
+}
+.solution{
+  opacity: 1;
+}
+.solution .section_title{
+  color: white; 
+}
+section:not(#activite) .inner__section{
+  display: flex;
+  flex-direction: column;
+}
+.inner__section h3{
+  font-weight: bolder;
+}
+
+/* RESULTAT */
+section#resultat{
+  min-height: 50vh;
+  background: #93abad url('images/group_opacity30.png') no-repeat 85%;
+  background-size: 15%;
+  display: flex;
+}
+.resultat .section_title{
+  color: white; 
+}
+
+/* ACTIVITE */
+section#activite{
+  margin: 5rem 0;
+  flex-direction: row;
+}
+.activite h2{
+  color: #67b4bb;
+  text-transform: uppercase;
+}
+.activite .inner__section{
+  background-color: #243825;
+  display: flex;
+}
+.inner__section_text h3{
+  color: white; 
+}
+
+.activite .inner__section_img{
+  width: 40%; 
+  height: 550px; 
+  background-image: url('./images/presentation_nakanek.jpeg');
+  background-position-y: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 40px;
+}
+.activite .inner__section_text{
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  flex-basis: 50%;
+}
+.activite .inner__section_text img{
+  max-width: 500px;
+  margin: auto;
+}
+.activite .inner__section_text p{
+  text-align: center;
+  flex-grow: 1;
+  flex-basis: 50%;
+  line-height: 2em;
+  padding: 0 4.5rem;
+  color: white;
+}
+
+#solution .inner__section_text p,
+#resultat .inner__section_text p{
+  color: black;
+}
+
+/* CONTACT */
+
+footer section#contact{
+  padding-top: 60px;
+  max-height: 65vh ;
+}
+.contact_infos{
+  display: flex;
+  height: 40vh;
+}
+.contact_legal{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+/*.inner__contact p,
+.inner__contact a, 
+.inner__contact h2{
+  color: white;
+}*/
+.contact_infos_coordonnees,
+.contact_infos_coordonnees .ico a,
+.contact_infos_coordonnees .ico a:visited,
+.contact_infos_coordonnees .ico a:focus,
+.contact_infos_coordonnees .ico a:active,
+.contact_infos_coordonnees a{
+  color: black;
+}
+.contact_infos_coordonnees .ico a{
+  padding-right: 10px;;
+}
+.inner__contact h2{
+  text-transform: uppercase;
+  color: white;
+}
+.contact_logo{
+  width: 80%;
+  height: auto;
+  background-image: url('./images/LOGOSEEME_OK_notText.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right;
+}
